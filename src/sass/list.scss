@@ -1,0 +1,59 @@
+/*
+	注释：
+		* 单行：不会被编译到css文件中
+		* 多行：保留
+	变量
+		* 格式：$变量名
+		* 属性值：直接使用
+		* 特殊用法：#{变量名}
+		* 多值变量
+			* list：nth()
+			* map：map-get()
+ */
+
+//运算
+div.container{width:343px;}
+div.col3{width:(900px/3)}
+
+
+//sass
+
+//变量
+//变量默认只能用字属性值中
+$color: blue;
+$mainColor:#333;
+$container:1200px;
+$dir:top;
+
+// list类型（类似于数组）
+$padding:10px 5px 15px 10px;
+
+// map类型（类似于对象）
+$headings: (h1: 2em, h2: 1.5em, h3: 1.2em,h4:1em);
+
+// 嵌套
+.goodslist{
+	// 在局部声明全局变量
+	$container:800px !global;
+	padding:10px;color:$color;width:$container;
+	ul {
+		overflow:hidden;
+		li{
+			float:left;width:200px;height:300px;margin:10px;padding:10px;border:1px solid #ddd;border-#{$dir}:1px solid #ddd;
+			p{
+				margin:5px 0;
+				&.price{
+					span{
+						color:#f00;
+					}
+				}
+			}
+			a,p.price,p.color{color:#333;text-decoration: none;}
+			img{display:block;border:1px solid #efefef;width:100%;height:160px;padding-top:nth($padding,2)}
+			
+		}
+
+	}
+}
+
+h2{font-size:map-get($headings,h2)}

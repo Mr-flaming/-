@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 注释： 单行：不会被编译到css文件中 多行：保留 变量 格式：$变量名 属性值：直接使用 特殊用法：变量名 多值变量 list：nth() map：map-get() */
+div.container { width: 343px; }
+
+div.col3 { width: 300px; }
+
+.goodslist { padding: 10px; color: blue; width: 800px; }
+
+.goodslist ul { overflow: hidden; }
+
+.goodslist ul li { float: left; width: 200px; height: 300px; margin: 10px; padding: 10px; border: 1px solid #ddd; border-top: 1px solid #ddd; }
+
+.goodslist ul li p { margin: 5px 0; }
+
+.goodslist ul li p.price span { color: #f00; }
+
+.goodslist ul li a, .goodslist ul li p.price, .goodslist ul li p.color { color: #333; text-decoration: none; }
+
+.goodslist ul li img { display: block; border: 1px solid #efefef; width: 100%; height: 160px; padding-top: 5px; }
+
+h2 { font-size: 1.5em; }
