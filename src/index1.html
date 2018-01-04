@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/jquery.sm.css" />
+	<script src="lib/jquery-3.2.1.js"></script>
+	<script src="lib/jquery.sm.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(function(){
+			$('#Header').load('head.html',function(){
+//				$('.logo img').attr('src','img/g5.jpg').width(200);更换logo取消注释
+			});
+			$('#Footer').load('foot.html');
+		})
+	</script>
+</head>
+<body>
+	<div id="Header"></div>
+	<div id="main">
+		<div class="container">
+			<div class="box">
+			</div>
+			<div class="box2">
+				<a href="#" class="box21"><img src="css/img/czt.jpg"/></a>
+				<a href="#"><img src="css/img/sjyst_01.jpg"/></a>
+			</div>
+			<div class="box3">
+				<ul class="box31">
+					<a href=""></a>
+				</ul>
+			</div>
+			<div><img src="img/weiju.jpg"/></div>
+			<div class="goodslist clearfix">
+				<ul class="goodslist_ul">
+				</ul>
+				<ul class="goodslist2_ul">
+				</ul>
+				<ul class="goodslist3_ul"></ul>
+			</div>
+		</div><!--(版心)-->
+	</div>
+	<div id="Footer"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+ul, li { list-style: none; }
+
+#head { width: 100%; border-bottom: 2px solid #bbb; background: #F7F7F7; }
+
+#head .container { padding-right: 40px; width: 1160px; height: 32px; }
+
+#head .head_r span { display: inline-block; padding-left: 8px; font-size: 12px; line-height: 32px; position: relative; }
+
+#head .laba { position: absolute; width: 18px; height: 17px; background: url("../css/img/jingling.png"); left: 12px; top: 4px; }
+
+#head .wx2 { position: absolute; width: 22px; height: 19px; background: url("../css/img/jingling.png") -57px 0px; left: -4px; top: -14px; }
+
+#head .wb { position: absolute; width: 22px; height: 19px; background: url("../css/img/jingling.png") -28px 0px; left: 20px; top: -15px; }
+
+#head2 .container { margin-top: 28px; height: 80px; }
+
+#head2 .container .head2_r { height: 80px; width: 442px; display: inline-block; }
+
+#head2 .container .text input { width: 262px; height: 30px; border: 1px solid #ccc; }
+
+#head2 .container .text #btn { width: 48px; height: 30px; border: 1px; background: #B81B22; border: 1px solid #ccc; text-align: center; line-height: 30px; color: #fff; }
+
+#head2 .container .text .car { width: 108px; height: 30px; background: #B81B22; text-align: center; line-height: 30px; }
+
+#head2 .container .text { position: relative; }
+
+#head2 .container .text .che { position: absolute; width: 22px; height: 18px; background: url("../css/img/jingling.png") -89px 0px; left: 338px; top: 5px; }
+
+#head2 .container .hot { width: 442px; height: 26px; padding-left: 18px; }
+
+#head2 .container .hot span { float: left; font-size: 12px; display: inline-block; line-height: 26px; padding-right: 10px; color: #727171; }
+
+#logo .container { height: 28px; position: relative; }
+
+#logo .container i { position: absolute; width: 189px; height: 47px; background: url("../css/img/jingling.png") -122px 0; left: 0; top: -18px; }
+
+#logo .container .nav { display: block; width: 1000px; height: 28px; }
+
+#logo .container .nav ul li { display: inline-block; width: 98px; float: left; font-size: 16px; line-height: 28px; border-right: 1px solid #ccc; text-align: center; }

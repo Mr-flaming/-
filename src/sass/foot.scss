@@ -1,0 +1,103 @@
+$jingling:url('../css/img/jingling.png');
+#foot{
+    .container{
+        height:326px;
+        margin-top:20px;
+        #foot_t{
+            width:1116px;
+            height:228px;
+            border:1px solid #ccc;
+            padding:30px 42px 22px 42px;
+            .foot_tl{
+                width:370px;
+                height:142px;
+                img{
+                    display: block;
+                    margin:0 auto;
+                    margin-top:16px;
+                    margin-bottom:30px;
+                }
+                .time{
+                    display: block;
+                    text-align:center;
+                    line-height:32px;
+                    margin:0 auto;
+                    width:158px;
+                    height:32px;
+                    background:#B81C22;
+                    color:#fff;
+                }
+            }
+            .foot_tc{
+                width:370px;
+                height:142px;
+                border-left:1px solid #bbb;
+                border-right:1px solid #bbb;
+                img{
+                    display: block;
+                    margin:0 auto;
+                    margin-top:16px;
+                    margin-bottom:30px;
+                }
+                p{
+                    line-height:22px;
+                    font-size:14px;
+                    display: block;
+                    text-align:center;
+                }
+            }
+            .foot_tr{
+                width:370px;
+                height:142px;
+                img{
+                    display: block;
+                    margin:0 auto;
+                    margin-top:6px;
+                    margin-bottom:10px;
+                    
+                }
+                p{
+                    font-size:14px;
+                    text-align: center;
+                    span{
+                        color:red;
+                    }
+                }
+            }
+        } 
+//      (尾部上)
+        .foot_tb{
+            float: left;
+            width:1120px;
+            height:56px;
+            background:#F8F8F8;
+            margin:24px auto;
+            li{
+                float: left;
+                margin-top:16px;
+                display:inline-block;
+                width: 180px;
+                text-align:center;
+                border-right:1px solid #ccc;
+                font-size:14px;
+            }
+        }
+        
+    }//  (版心)
+    #foot_b{
+        width:100%;
+        border-top:2px solid #3E3A39;
+        .container{
+            height:164px;
+            .foot_bt{
+                height:70px;
+                p{
+                    display: block;
+                    text-align:center;
+                    font-size:12px;
+                    line-height:28px;
+                }
+            }
+        }
+    }
+}

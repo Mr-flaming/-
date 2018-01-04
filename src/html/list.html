@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/list.css" />
+	</head>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/list.js"></script>
+		<script>
+			$(function(){
+				$('#header').load('./head2.html');
+				$('#footer').load('./foot2.html');
+				
+			});
+		</script>
+	<body>
+		<div id="header"></div>
+		<div id="list">
+			<div class="container">
+				<div class="cuurent">
+					<div class="fl">
+						<span>当前位置：</span>
+						<a href="#">所有分类</a>
+					</div>
+					<div class="fr">
+						<div>找到相关商品<span>21</span>款</div>
+					</div>
+				</div>
+				<div class="clothing">
+					<div class="clothing_left">服装</div>
+						<ul class="clothing_right">
+							<a href="#"><li>男装<span>(19)</span></li></a>
+							<a href="#"><li>运动户外<span>(2)</span></li></a>
+						</ul>
+				</div>
+				<div class="goods">
+					<a href="#"><span class="good fl">全部商品</span></a>
+					<div id="page">
+						<span style="line-height:32px;">1/1</span>
+						<a href=""><span><img src="../css/img/listJT.png" alt="" /></span></a>
+						<a href=""><span><img src="../css/img/next.png" alt="" /></span></a>
+					</div>
+					<ul class="good2">
+						<a href="#"><li>默认<img src="../css/img/list_jiantou.png" alt="" /></li></a>
+						<a href="#"><li>销量<img src="../css/img/list_jiantou.png" alt="" /></li></a>
+						<a href="#"><li>好评<img src="../css/img/list_jiantou.png" alt="" /></li></a>
+						<a href="#"><li>最新<img src="../css/img/list_jiantou.png" alt="" /></li></a>
+						<a href="#"><li>价格<img src="../css/img/list_jiantou.png" alt="" /></li></a>
+						<li style="border-right:none;"></li>
+						<a href="#"><span class="fr">合拼同款</span></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="goodslist">
+			<div class="container clearfix">
+				<ul class="goodslist_ul">
+					<li>
+						<img src="../img/c1.jpg" alt="" />
+						<p>凡客羽绒服 智能温控 鹅绒增强2.0版</p>
+						<p>售价￥：<del>1998</del></p>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div id="page2">
+			<div class="container clearfix">
+				<div class="page2_r">
+					<span>上一页</span>
+					<ul class="pageN">
+						
+					</ul>
+					<span>下一页</span>
+					<div>共<i>1</i>页</div>
+					到第<input type="text" value="1"/>页<button>确定</button>
+					
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

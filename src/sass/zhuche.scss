@@ -1,0 +1,108 @@
+#head{
+    .container{
+        height:60px;
+        border-bottom:2px solid #ccc;
+        padding-top:16px;
+    }
+}
+#main{
+    .container{
+        height:540px;
+        width:1120px;
+        padding-top:46px;
+        padding-right:80px;
+        .maint{
+            width:1100px; 
+            height:36px;  
+        }
+        .main_t{
+            height:36px;
+            width:420px;
+            float: right;
+            border-bottom:2px solid #961D22;
+        }
+        .main_t span:nth-child(1){
+            line-height: 36px;
+            font-size:20px;
+            color:#bbb;
+        }
+        .main_t span:nth-child(2){
+            float: right;
+            line-height:36px;
+            font-size:14px;
+        }
+        .main_c{
+            width:1004px;
+            .main_cl{
+                float: left;
+                margin:16px 0 0 130px;
+            }
+            .main_cr{
+                width:318px;
+                height:400px;
+                float: right;
+                margin-top:30px;
+                
+            }
+            #yzm{
+                width:250px;
+                height:44px;
+                border:1px solid #ccc;
+                margin-right:12px;
+                float: left;
+                padding-left:14px;
+            }
+            .main_cr #num{
+                float: left;
+                display:inline-block;
+                padding:11px 38px;
+                border:1px solid #ccc;
+                font-size:16px;
+            }
+            #phone{
+                width:250px;
+                height:44px;
+                border:1px solid #ccc;
+                margin-right:12px;
+                float: left;
+                padding-left:14px;
+            }
+            .main_cr  #huoqu{
+                float: left;
+                padding:14px 24px;
+                border:1px solid #ccc;
+                font-size:12px;
+            }
+            .main_cr li{
+                width:414px;
+                height:45px;
+                margin-bottom:16px;
+            }
+            #phoneYzm{
+                width:396px;
+                height:44px;
+                border:1px solid #ccc;
+                margin-right:6px;
+                float: left;
+                padding-left:14px;
+            }
+            #password1,#password2{
+                width:396px;
+                height:44px;
+                border:1px solid #ccc;
+                margin-right:6px;
+                float: left;
+                padding-left:14px;
+            }
+            #login{
+                width:414px;
+                height:44px;
+                background:#9A9A9A;
+                color:#fff;
+                text-align:center;
+                line-height: 44px;
+            }
+        }
+    }
+       
+}

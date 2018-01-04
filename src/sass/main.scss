@@ -1,0 +1,33 @@
+ul,li{list-style:none;}
+#main{
+    .box{
+        height:535px;
+        margin:30px 0 40px 0;
+    }
+    .box2 img:nth-child(1){
+        margin-bottom:14px;
+    }
+    .box3 ul{
+        display:inline-block;
+        width: 1080px;
+        height:950px;
+        padding-left:120px;
+    }
+    .box3 .box31 li{
+        width:292px;
+        height:457px;
+        float: left;
+        margin-right:46px;
+    }
+    .goodslist{
+        margin-top:30px;
+    }
+    .goodslist_ul{
+        display:inline-block;
+        margin-left:2px;
+    }
+    .goodslist li{
+            float: left;
+            margin-bottom:12px;
+    }
+}

@@ -1,21 +1,57 @@
-@charset "UTF-8";
-/* 注释： 单行：不会被编译到css文件中 多行：保留 变量 格式：$变量名 属性值：直接使用 特殊用法：变量名 多值变量 list：nth() map：map-get() */
-div.container { width: 343px; }
+#list .container { margin-top: 30px; }
 
-div.col3 { width: 300px; }
+#list .container .cuurent { font-size: 12px; height: 30px; }
 
-.goodslist { padding: 10px; color: blue; width: 800px; }
+#list .container .cuurent .fl span { color: #ccc; }
 
-.goodslist ul { overflow: hidden; }
+#list .container .cuurent .fr span { color: red; }
 
-.goodslist ul li { float: left; width: 200px; height: 300px; margin: 10px; padding: 10px; border: 1px solid #ddd; border-top: 1px solid #ddd; }
+#list .container .clothing { height: 36px; width: 1200px; border: 1px solid #ccc; }
 
-.goodslist ul li p { margin: 5px 0; }
+#list .container .clothing .clothing_left { float: left; display: inline-block; width: 66px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; }
 
-.goodslist ul li p.price span { color: #f00; }
+#list .container .clothing .clothing_right { display: inline-block; border-left: 1px solid #ccc; height: 36px; }
 
-.goodslist ul li a, .goodslist ul li p.price, .goodslist ul li p.color { color: #333; text-decoration: none; }
+#list .container .clothing .clothing_right li { display: inline-block; width: 82px; height: 36px; float: left; font-size: 14px; text-align: center; line-height: 36px; }
 
-.goodslist ul li img { display: block; border: 1px solid #efefef; width: 100%; height: 160px; padding-top: 5px; }
+#list .container .goods { height: 72px; margin-top: 14px; }
 
-h2 { font-size: 1.5em; }
+#list .container .goods .good { display: inline-block; width: 87px; height: 32px; background: #B81C22; text-align: center; line-height: 32px; color: #fff; }
+
+#list .container .goods #page { display: inline-block; float: right; }
+
+#list .container .goods #page span { margin-left: 6px; font-size: 12px; }
+
+#list .container .goods .good2 { display: inline-block; width: 1200px; height: 34px; border: 1px solid #ccc; border-top: 2px solid #B81C22; }
+
+#list .container .goods .good2 li { float: left; display: inline-block; width: 74px; height: 34px; line-height: 34px; text-align: center; border-right: 1px solid #ccc; font-size: 14px; }
+
+#list .container .goods .good2 span { display: inline-block; width: 80px; height: 33px; background: #ccc; line-height: 33px; text-align: center; border-bottom: 1px solid #ccc; border-left: 2px solid #ccc; font-size: 14px; }
+
+#goodslist .container { margin-top: 20px; }
+
+#goodslist .container li { display: inline-block; width: 228px; height: 303px; float: left; margin: 0px 12px 20px 0px; }
+
+#goodslist .container li p:nth-child(2) { color: #aaa; margin-top: 10px; }
+
+#goodslist .container li p:nth-child(3) { color: red; }
+
+#goodslist .container li p { font-size: 12px; text-align: center; line-height: 28px; }
+
+#goodslist .container li img { width: 230px; height: 230px; }
+
+#page2 .container .page2_r { width: 400px; height: 30px; float: right; margin-bottom: 20px; font-size: 12px; }
+
+#page2 .container .page2_r span { display: inline-block; float: left; width: 48px; height: 22px; border: 1px solid #ccc; text-align: center; line-height: 22px; margin-left: 6px; }
+
+#page2 .container .page2_r input { width: 30px; height: 20px; border: 1px solid #ccc; text-align: center; }
+
+#page2 .container .page2_r div { display: inline-block; margin: 0 6px; }
+
+#page2 .container .page2_r button { margin-left: 8px; width: 50px; height: 24px; background: #B81C22; color: #fff; }
+
+#page2 .container .page2_r .pageN { width: 58px; height: 22px; float: left; }
+
+#page2 .container .page2_r li { width: 22px; height: 22px; text-align: center; line-height: 22px; float: left; margin-left: 6px; }
+
+#page2 .container .page2_r .active { background: #B81C22; }

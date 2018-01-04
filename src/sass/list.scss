@@ -1,59 +1,189 @@
-/*
-	注释：
-		* 单行：不会被编译到css文件中
-		* 多行：保留
-	变量
-		* 格式：$变量名
-		* 属性值：直接使用
-		* 特殊用法：#{变量名}
-		* 多值变量
-			* list：nth()
-			* map：map-get()
- */
+#list{
+    .container{
+        margin-top:30px;
+        .cuurent{
+        font-size:12px;
+        height:30px;
+            .fl span{
+            color:#ccc;
+            }
+            .fr span{
+            color:red;
+            }
+        }
+        
+        .clothing{
+            height:36px;
+            width:1200px;
+            border:1px solid #ccc;
+            .clothing_left{
+                float: left;
+                display:inline-block;
+                width:66px;
+                height:36px;
+                text-align:center;
+                line-height:36px;
+                font-size:14px;
+            }
+            .clothing_right{
+                display:inline-block;
+                border-left:1px solid #ccc;
+                height:36px;
+                li{
+                    display:inline-block;
+                    width:82px;
+                    height:36px;
+                    float: left;
+                    font-size:14px;
+                    text-align: center;
+                    line-height:36px;
+                }
+            }
+            
+        }
+        .goods{
+            height:72px;
+            margin-top:14px;
+            .good{
+                display:inline-block;
+                width:87px;
+                height:32px;
+                background:#B81C22;
+                text-align: center;
+                line-height:32px;
+                color:#fff;
+            }
+            #page{
+                display:inline-block;
+                float: right;
+                span{
+                    margin-left:6px;
+                    font-size:12px;
+                }
+            }
+            .good2{
+                display:inline-block;
+                width:1200px;
+                height:34px;
+                border:1px solid #ccc;
+                border-top:2px solid #B81C22;
+                
+                li{
+                    float: left;
+                    display:inline-block;
+                    width:74px;
+                    height:34px;
+                    line-height:34px;
+                    text-align: center;
+                    border-right:1px solid #ccc;
+                    font-size:14px;
+                }
+                span{
+                    display:inline-block;
+                    width:80px;
+                    height:33px;
+                    background:#ccc;
+                    line-height:33px;
+                    text-align: center;
+                    border-bottom:1px solid #ccc;
+                    border-left:2px solid #ccc;
+                    font-size:14px;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
+//生成的商品
+#goodslist{
+    .container{
+        margin-top:20px;
+        li{
+            display:inline-block;
+            width:228px;
+            height:303px;
+            float: left;
+//          border:1px solid #000;
+            margin:0px 12px 20px 0px;
+            p:nth-child(2){
+                color:#aaa;
+                margin-top:10px;
+            }
+            p:nth-child(3){
+                color:red;       
+            }
+            p{
+                font-size:12px;            
+                text-align: center;
+                line-height:28px;
+            }
+            img{
+                width:230px;
+                height:230px;
+            }
+        }
+    }
+}
+#page2{
+    .container{
+        .page2_r{
+            width:400px;
+            height:30px;
+            float: right;
+            margin-bottom:20px;
+            font-size:12px;
+            span{
+               display:inline-block;
+               float: left;
+               width:48px;
+               height:22px;
+               border:1px solid #ccc;
+               text-align: center;
+               line-height:22px;
+               margin-left:6px;
+            }
+            input{
+                width:30px;
+                height:20px;
+                border:1px solid #ccc;
+                text-align: center;
+                
+            }
+            div{
+                display:inline-block;
+                margin: 0 6px;
+            }
+            button{
+                margin-left:8px;
+                width:50px;
+                height:24px;
+                background:#B81C22;
+                color:#fff;
+            }
+            .pageN{
+                width:58px;
+                height:22px;
+                float: left;
 
-//运算
-div.container{width:343px;}
-div.col3{width:(900px/3)}
-
-
-//sass
-
-//变量
-//变量默认只能用字属性值中
-$color: blue;
-$mainColor:#333;
-$container:1200px;
-$dir:top;
-
-// list类型（类似于数组）
-$padding:10px 5px 15px 10px;
-
-// map类型（类似于对象）
-$headings: (h1: 2em, h2: 1.5em, h3: 1.2em,h4:1em);
-
-// 嵌套
-.goodslist{
-	// 在局部声明全局变量
-	$container:800px !global;
-	padding:10px;color:$color;width:$container;
-	ul {
-		overflow:hidden;
-		li{
-			float:left;width:200px;height:300px;margin:10px;padding:10px;border:1px solid #ddd;border-#{$dir}:1px solid #ddd;
-			p{
-				margin:5px 0;
-				&.price{
-					span{
-						color:#f00;
-					}
-				}
-			}
-			a,p.price,p.color{color:#333;text-decoration: none;}
-			img{display:block;border:1px solid #efefef;width:100%;height:160px;padding-top:nth($padding,2)}
-			
-		}
-
-	}
+            }
+            li{
+                width:22px;
+                height:22px;
+                text-align: center;
+                line-height: 22px;
+                float: left;
+                margin-left:6px;
+            }
+            .active{
+                background: #B81C22;   
+            }
+            
+        }
+        
+    }
 }
 
-h2{font-size:map-get($headings,h2)}
+
+

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+/*input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}*/
+select, input { vertical-align:middle;}
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+
+
+/*添加公共样式*/
+/*body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}*/
+.clearfix::after{ 
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+    zoom:1;
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+/*公共类*/
+.container {  /*版心 提取 */
+    width:1200px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+
+/*公共部分*/
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1511574800759'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1511574800759#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAW8AAsAAAAACFgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kjAY21hcAAAAYAAAABmAAABnM6PaR9nbHlmAAAB6AAAAcsAAAIUCMhliWhlYWQAAAO0AAAALwAAADYPnSAWaGhlYQAAA+QAAAAcAAAAJAfeA4VobXR4AAAEAAAAABAAAAAQD+kAAGxvY2EAAAQQAAAACgAAAAoBgACabWF4cAAABBwAAAAfAAAAIAETAF1uYW1lAAAEPAAAAUUAAAJtPlT+fXBvc3QAAAWEAAAANgAAAEfcHX4+eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sU4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDy7wtzwv4EhhrmBoQEozAiSAwAzvg1CeJzFkNENgCAMRK+ChBhH8dM4kF+OwKCsAGvgtfDDBBx5pb1cUgKAHYAjF/GAfBCoXrpivsNhvsfDOfJsvFMJNbc2dSqxRLTOaVIClknWrZ51Wr3HpP+dBnxiCR31a+5g+wFDnRLXAAB4nE1QTWvUUBR992XeS96bvJe8l69JZiaZJM5ktHWgaSZCiy2omxYFwW66dK8u3BTERTeCCxfu3EtB0I0/oP/CXyD6L8TUTEXwcriHw+UeOAcRhK6+G5fGCHloiXbQA/QYIaBbUEg8hbxqVngLgpwEkS+NqqxysyxWxl2ICuqHddssImpSBySksJvXbbXCFaybA7wPdTgFiMfJEz2faOM98FGVvumO8UcIsnLiHNzujrYP/XrmWWe21rHW7yxKiIXxwJHwPAoZYZx2F8RJgsvsJs7Ajqvk4amYjfXTt82L6TxiAOfn4I1n8tOhSlSP10no6dh0hTVKRHnDh7Ofw5FnTxc/UD+wWUaD95HqRZ6CbxoSqkVlLNo77S4M4HcwFb/kUtHBlU2UVH2MyS3ZfVXEJgRO1FIMNxbXPvfxBXJRjh4hNK9T7EtcrHCfnPwvvDoF6mAJZR7ldeDTMu8PldGXiNdN27eUQgZhBvDBjhRjKooDxbkKYCLCjQ7jv/RK+wzw3LYSr/vM4Cizve6L0EML7+1wYQ20c084HBsA5jfm/vuKQ5cBc6NR5HJ+TQxecunSZ0Xi742FZ3shgzWXjimUZdMh4dvoD2FoQpEAeJxjYGRgYABisecea+P5bb4ycLMwgMA1u3cCCPr/QxYGZgkgl4OBCSQKAB9ZCdAAeJxjYGRgYG7438AQw8IAAkCSkQEVsAAARwoCbQQAAAAD6QAABAAAAAQAAAAAAAAAAHYAmgEKAAB4nGNgZGBgYGEIZGBlAAEmIOYCQgaG/2A+AwAREgFxAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgIWRiZGZkYWRlYGxgjOxqCgtMycnPoU3Pb+0vDQ5I1U3Ob+gkoEBAJJnCbAAAA==') format('woff'),
+  url('../font/iconfont.ttf?t=1511574800759') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1511574800759#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrfill_d:before { content: "\e6d4"; }
+
+.icon-gouwuche-copy:before { content: "\e506"; }
+
