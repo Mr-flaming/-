@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
 	</head>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/carlist.js"></script>
 	<body>
 		<header id="head">	
 			<div class="container">
@@ -27,21 +29,58 @@
 		</div>
 		<div id="car">
 			<div class="container">
-				<table cellspacing="0">
-					<thead>
-						<tr>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
-				</table>
+				<div class="car_ul">
+					<ul>
+						<li><input type="checkbox" id="box1"/><label for="box1">全选</label></li>
+						<li><span>商品名称</span></li>
+						<li>尺寸</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>优惠</li>
+						<li>小计</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="car_goods">
+					<ul>
+						<li>
+							<span class="car_1"><input type="checkbox" id="goods_box"/></span>
+							<span class="car_2"><img src="../css/img/cartupian.jpg" alt="" /></span>
+							<span class="car_3">凡客羽绒服 智能温控 鹅绒增强2.0版男款 <span class="car_31">海神蓝</span></span>
+							<span class="car_4">XL</span>
+							<span class="car_5">￥936.00</span>
+							<span class="car_6">
+								<a href=""><img src="../css/img/jian.bmp" alt="" /></a>
+								<input type="text" value="1"/>
+								<a href=""><img src="../css/img/jia.bmp" alt="" /></a>
+							</span>
+							<span class="car_7">-</span>
+							<span class="car_8">936</span>
+							<span class="car_9"><a href="">删除</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="car_price">
+					<div class="car_option">
+						<span><input type="checkbox" id="box2"/><label for="box2">全选</label></span>
+						<a href="#"><span>删除</span></a>
+						<div class="total">数量总计：<span style="color:red;">1</span>件</div>
+						<span style="color:red;">您目前可享受全场购物免运费</span>
+					</div>
+					<div class="price">
+						产品金额总计（不含运费）<span>￥936.00</span>
+					</div>
+					<div class="close">
+						<a href=""><img src="../css/img/shop.bmp" alt="" /></a>
+						<a href=""><img src="../css/img/close.bmp" alt="" /></a>
+					</div>
+				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="container">
+				<img src="../css/img/car_footer.bmp" alt="" />
+			</div>
+		</footer>
 	</body>
 </html>

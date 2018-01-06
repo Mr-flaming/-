@@ -1,7 +1,6 @@
 #main{
     .container{
-		.active{border:1px solid #961D22;}
-        
+		.active{border:1px solid #961D22 !important;}
         margin-top:30px;
         .home{
             height:22px;
@@ -89,6 +88,7 @@
             width:560px;
             height:374px;
             margin-top:10px;
+            
             .price{
                 font-size:14px;
                 color:#B81C22;
@@ -115,6 +115,7 @@
                 .color3{
                     display:inline-block;
                     margin-left:10px;
+                    
                     ul{
                         display:inline-block;
                         li{
@@ -126,13 +127,17 @@
                             border:1px solid #ccc;
                             line-height: 38px;
                             font-size:12px;
+                            .active{border:1px solid #961D22;}
                             span{
                                 width:36px;
                                 height:36px;
                                 display:inline-block;
-                                border:1px solid #ccc;
-                                vertical-align:middle;
                                 margin-right:3px;
+                                img{
+                                    width:38px;
+                                    height:38px;
+                                    
+                                }
                             }
                         }
                     }

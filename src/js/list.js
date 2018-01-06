@@ -8,8 +8,8 @@ jQuery(function(){
 			$goodslist_ul = $('.goodslist_ul').html(function(){
 			
 			return _res.data.map(function(item){
-				   
 				return `<li data-id='${item.id}'>
+						
 						<a href="#"><img src ="${item.img}"></a>
 						<a href="#"><p>${item.name}</p></a>
 						<p>售价￥：<del>${item.oldPrice}</del></p>

@@ -36,10 +36,118 @@
 #car{
     .container{
         width:980px;
-        height:300px;
-        thead{
+        height:250px;
+        .car_ul{
             width:980px;
-            height:40px;   
+            height:40px;
+            background:#CCCCCC;
+            li{
+                display:inline-block;
+                line-height: 40px;
+                margin:0 20px;
+                font-size:14px;
+                input{
+                    margin:0 10px;
+                }
+                span{
+                    margin:140px;
+                }
+            }
+            
+        } 
+        
+        
+        .car_goods{
+            min-height:50px;
+            border:1px solid #ccc;
+            padding:20px;
+            background:#fff;
+            li{
+                height:70px;
+                background:#F8F8F8;
+                line-height: 70px;
+                font-size:12px;
+                .car_6 input{
+                    width:22px;
+                    height:20px;
+                    margin:0 2px;
+                    padding-left:2px;
+                    text-align: center;
+                    
+                }
+                span{
+                    margin-left:16px;
+                    display:inline-block;
+                    float: left;
+                }
+                .car_3{
+                    width:200px;
+                    font-size:12px;
+                    margin:25px 40px;
+                    line-height:14px;
+                    margin-right:140px;
+                }
+                .car_5{
+                    width:80px;
+                    height:70px;
+                    text-align: center;
+                    margin-left:25px;
+                   
+                }
+                .car_6{
+                    margin-left:4px;
+                }
+                .car_7{
+                    margin:0 35px;
+                }
+                .car_9{
+                    margin-left:54px;
+                }
+                
+            }
         }
+        .car_price{
+            width:922px;
+            height:100px;
+            background:papayawhip;
+            border:1px solid #f60;
+            margin-top: 10px;
+            padding: 14px 42px 0 13px;
+            .car_option{
+                
+                width:968px;
+                height:39px;
+                font-size: 14px;
+                div{
+                    display:inline-block;
+                }
+                span{
+                    margin:0 10px;
+                }
+            }
+        }
+        .price{
+            width:270px;
+            height:50px;
+            padding-left:5px;
+            float: left;
+            font-size:14px;
+            span{
+                font-weight: bold;
+                font-size:18px;
+                color:red;
+            }
+        }
+        .close{
+            float: right;
+        }
+        
+        
+    }
+}
+footer{
+    .container{
+        width:980px;
+        margin:0 auto;
     }
 }
