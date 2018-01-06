@@ -1,0 +1,83 @@
+#main .container { margin-top: 30px; }
+
+#main .container .active { border: 1px solid #961D22; }
+
+#main .container .home { height: 22px; font-size: 12px; color: #000; }
+
+#main .container .home span { margin: 0 8px; }
+
+#main .container .bignames { width: 1200px; height: 80px; }
+
+#main .container .bignames .names { width: 1200px; height: 46px; border-bottom: 1px solid #ccc; line-height: 46px; }
+
+#main .container .bignames .names h2 { font-size: 18px; margin-left: 20px; font-weight: bold; float: left; }
+
+#main .container .bignames .names span { font-size: 14px; color: #B81B22; margin-left: 10px; }
+
+#main .container .product { width: 465px; height: 45px; }
+
+#main .container .product li { float: left; font-size: 15px; font-weight: bold; margin-left: 10px; color: #000; }
+
+#main .container .tupian { width: 640px; height: 430px; position: relative; }
+
+#main .container .tupian .min { width: 74px; height: 449px; display: inline-block; float: left; }
+
+#main .container .tupian .min li { margin-top: 11px; border: 1px solid #ccc; padding: 1px; }
+
+#main .container .tupian .max { width: 400px; height: 400px; margin: 10px 80px 0 80px; float: left; padding: 1px; border: 1px solid #bbb; position: relative; }
+
+#main .container .tupian .max .max_ul { height: 400px; }
+
+#main .container .tupian .max .max_ul li { position: absolute; }
+
+#main .container .tupian .fangdajing { width: 400px; height: 400px; border: 1px solid #ccc; position: absolute; left: 560px; top: 12px; display: none; overflow: hidden; }
+
+#main .container .xuanzhe { width: 560px; height: 374px; margin-top: 10px; }
+
+#main .container .xuanzhe .price { font-size: 14px; color: #B81C22; }
+
+#main .container .xuanzhe .price span { font-weight: bold; font-size: 20px; }
+
+#main .container .xuanzhe .price a { margin-left: 14px; color: #B81C22; }
+
+#main .container .xuanzhe .color { width: 561px; height: 60px; margin-top: 20px; }
+
+#main .container .xuanzhe .color .color2 { float: left; display: inline-block; line-height: 30px; font-size: 12px; }
+
+#main .container .xuanzhe .color .color3 { display: inline-block; margin-left: 10px; }
+
+#main .container .xuanzhe .color .color3 ul { display: inline-block; }
+
+#main .container .xuanzhe .color .color3 ul li { float: left; width: 92px; height: 42px; padding-left: 2px; margin: 0 8px 8px 0; border: 1px solid #ccc; line-height: 38px; font-size: 12px; }
+
+#main .container .xuanzhe .color .color3 ul li span { width: 36px; height: 36px; display: inline-block; border: 1px solid #ccc; vertical-align: middle; margin-right: 3px; }
+
+#main .container .xuanzhe .size { width: 516px; height: 32px; float: left; }
+
+#main .container .xuanzhe .size p { display: inline-block; float: left; font-size: 12px; }
+
+#main .container .xuanzhe .size li { display: inline-block; float: left; padding: 2px 7px; border: 1px solid #ccc; margin-left: 5px; font-size: 12px; }
+
+#main .container .xuanzhe .goodsnum { float: left; width: 516px; height: 35px; margin-top: 10px; }
+
+#main .container .xuanzhe .goodsnum p { display: inline-block; font-size: 12px; }
+
+#main .container .xuanzhe .goodsnum #select { width: 40px; }
+
+#main .container .xuanzhe .yixuan { width: 400px; height: 22px; }
+
+#main .container .xuanzhe .yixuan p { display: inline-block; font-size: 12px; }
+
+#main .container .xuanzhe .yixuan span { font-size: 14px; color: #961D22; margin-right: 10px; }
+
+#main .container .xuanzhe .shop { width: 350px; height: 40px; margin-top: 24px; margin-bottom: 15px; }
+
+#main .container .xuanzhe .shop a { display: inline-block; width: 160px; height: 34px; border: 1px solid #961D22; float: left; text-align: center; line-height: 32px; font-size: 14px; margin-right: 8px; color: red; }
+
+#main .container .xuanzhe .shop a:nth-child(1) { background: pink; color: #961D22; }
+
+#main .container .xuanzhe .shop a:nth-child(2) { background: #B81B22; color: #fff; }
+
+#tujie .container { margin-top: 30px; }
+
+#tujie .container .size2 { width: 1200px; height: 150px; text-align: center; line-height: 150px; border-top: 1px solid #ccc; font-size: 30px; font-weight: bold; }

@@ -1,0 +1,45 @@
+#head{
+    .container{
+        width:980px;
+        height:60px;
+        margin-top:15px;
+        border-bottom:1px solid #ccc;
+        img{
+            margin-left:40px;
+        }
+        .fr{
+            font-size:14px;
+            color:red;
+            line-height:80px;
+            margin-right:40px;
+        }
+    }
+}
+#nav{
+    .container{
+        width:980px;
+//      height:45px;
+        margin-top:10px;
+        .car{
+            height:40px;
+        }
+        .tishi{
+            font-size:14px;
+            color:#000;
+            height:36px;
+        }
+        .tishi>span{
+            color:red;
+        }
+    }
+}
+#car{
+    .container{
+        width:980px;
+        height:300px;
+        thead{
+            width:980px;
+            height:40px;   
+        }
+    }
+}

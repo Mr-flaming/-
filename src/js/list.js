@@ -43,6 +43,35 @@ jQuery(function(){
 				arr(res);
 			},"json");
 		})
+		
+		console.log(res)
+		
+			$('.goodslist_ul').on('click','li',function(){
+                var id = $(this).attr('data-id');
+//              console.log(res.data[id]);
+                var params = '?';
+//              console.log(res.data)
+                $(res.data).each(function(i,item){
+                	if(item.id == id){
+                		for(var attr in item){
+                    		params += attr + '=' + item[attr] + '&';
+                		}
+//              		console.log(1)
+                		//删除多余&
+                		params = params.slice(0,-1);
+                		//跳转页面
+                		location.href = 'detail.html' + encodeURI(params);
+                	}
+                	
+                })
+                
+                
+            });
+		
+		
+		
+		
+		
 	},"json");
 
 		
