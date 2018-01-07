@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="../css/zhuche.css" />
 	<link rel="stylesheet" href="../css/base.css" />
 </head>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/zhuce.js"></script>
 <body>
 	<div id="head">
 		<div class="container">
@@ -19,7 +21,7 @@
 			<div class="maint">
 				<div class="main_t">
 					<span>注册新用户</span>
-					<span class="denglu">我已经注册，现在<a href="#" style="color:red;">登录</a></span>	
+					<span class="denglu">我已经注册，现在<a href="http://127.0.0.1:1996/src/html/denglu.html" style="color:red;">登录</a></span>	
 				</div>
 			</div>
 			<div class="main_c">
@@ -29,8 +31,10 @@
 				<div class="main_cr">
 					<ul>
 						<li>
-							<input type="text" id="yzm" placeholder="验证码"/><span id="num">abc123</span>	
+							<input type="text" id="yzm" placeholder="验证码"/><span id="num"></span>	
+							
 						</li>
+							<div class="tishi"></div>
 						<li>
 							<input type="text" id="phone" placeholder="请输出手机号码"/><span id="huoqu">获取短信验证码</span>
 						</li>
@@ -40,11 +44,13 @@
 						<li>
 							<input type="text" id="password1" placeholder="设置密码"/>
 						</li>
+							<div class="pass"></div>
 						<li>
 							<input type="text" id="password2" placeholder="再次输入密码"/>
 						</li>
+							<div class="pass2"></div>
 						<li style="margin-bottom:0;">
-							<span class="yuedu" style="font-size: 12px;"><input type="checkbox" />请阅读</span><span style="font-size:12px;color:#B52024;">《VANCL凡客诚品服务条款》</span>
+							<span class="yuedu" style="font-size: 12px;"><input type="checkbox" class="box"/>请阅读</span><span style="font-size:12px;color:#B52024;">《VANCL凡客诚品服务条款》</span>
 						</li>
                        <div id="login">立即注册</div>
 						

@@ -1,0 +1,19 @@
+#head .container { height: 60px; border-bottom: 2px solid #ccc; padding-top: 16px; }
+
+#main .container { height: 540px; width: 1120px; padding-top: 46px; padding-right: 80px; }
+
+#main .container .tishi { font-size: 12px; }
+
+#main .container .maint { width: 1100px; height: 36px; }
+
+#main .container .main_t { height: 36px; width: 402px; float: right; border-bottom: 2px solid #961D22; margin-right: 18px; }
+
+#main .container .main_t span:nth-child(1) { line-height: 36px; font-size: 20px; color: #bbb; }
+
+#main .container .main_t span:nth-child(2) { float: right; line-height: 36px; font-size: 14px; }
+
+#main .container .main_cl { margin: 16px 0 0 130px; }
+
+#main .container .main_cr { width: 401px; height: 410px; background: #fff; border: 1px solid #ccc; margin-top: 6px; margin-bottom: 20px; margin-right: 37px; }
+
+#main .container .main_cr .denglu { width: 402px; height: 36px; background: #961D22; color: #fff; font-size: 14px; text-align: center; line-height: 36px; }

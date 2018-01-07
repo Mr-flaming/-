@@ -12,7 +12,7 @@
 
 #nav .container .tishi > span { color: red; }
 
-#car .container { width: 980px; height: 250px; }
+#car .container { width: 980px; }
 
 #car .container .car_ul { width: 980px; height: 40px; background: #CCCCCC; }
 
@@ -24,7 +24,7 @@
 
 #car .container .car_goods { min-height: 50px; border: 1px solid #ccc; padding: 20px; background: #fff; }
 
-#car .container .car_goods li { height: 70px; background: #F8F8F8; line-height: 70px; font-size: 12px; }
+#car .container .car_goods li { width: 900px; height: 70px; background: #F8F8F8; line-height: 70px; font-size: 12px; float: left; }
 
 #car .container .car_goods li .car_6 input { width: 22px; height: 20px; margin: 0 2px; padding-left: 2px; text-align: center; }
 
@@ -32,13 +32,17 @@
 
 #car .container .car_goods li .car_3 { width: 200px; font-size: 12px; margin: 25px 40px; line-height: 14px; margin-right: 140px; }
 
-#car .container .car_goods li .car_5 { width: 80px; height: 70px; text-align: center; margin-left: 25px; }
+#car .container .car_goods li .car_4 { display: inline-block; width: 22px; }
+
+#car .container .car_goods li .car_5 { width: 80px; height: 70px; text-align: center; margin-left: 17px; }
 
 #car .container .car_goods li .car_6 { margin-left: 4px; }
 
-#car .container .car_goods li .car_7 { margin: 0 35px; }
+#car .container .car_goods li .car_7 { margin-left: 36px; }
 
-#car .container .car_goods li .car_9 { margin-left: 54px; }
+#car .container .car_goods li .car_8 { margin-left: 45px; display: inline-block; width: 50px; }
+
+#car .container .car_goods li .car_9 { margin-left: 30px; }
 
 #car .container .car_price { width: 922px; height: 100px; background: papayawhip; border: 1px solid #f60; margin-top: 10px; padding: 14px 42px 0 13px; }
 

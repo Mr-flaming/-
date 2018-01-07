@@ -13,3 +13,5 @@ ul, li { list-style: none; }
 #main .goodslist_ul { display: inline-block; margin-left: 2px; }
 
 #main .goodslist li { float: left; margin-bottom: 12px; }
+
+#btn { position: fixed; right: 10px; bottom: 80px; }

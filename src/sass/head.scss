@@ -118,8 +118,9 @@ ul,li{list-style:none;}
                 display: block;
                 width:1000px;
                 height:28px;
+                position:relative;
             }
-            .nav ul li{
+            .nav .nav_ul>li{
                     display:inline-block;
                     width:98px;
                     float: left;
@@ -128,6 +129,178 @@ ul,li{list-style:none;}
                     border-right:1px solid #ccc;
                     text-align:center;
                 }
+                .nav2{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:99px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li2:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                .nav3{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:198px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li3:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                .nav4{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:298px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li4:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                .nav5{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:395px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li5:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                 .nav6{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:494px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li6:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                 .nav7{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:593px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li7:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                 .nav8{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:692px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li8:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                .nav9{
+                    width:98px;
+                    background:#fff;
+                    position:absolute;
+                    left:791px;
+                    top:26px;
+                    text-align: center;
+                    line-height:33px;
+                    display:none;
+                    z-index:999;
+                    border:1px solid #ccc;
+                    
+                    a{
+                        line-height:20px;
+                    }
+                }
+                #li9:hover ul{
+                    display: block;
+//                  border:1px solid #ccc;
+                    border-top:5px solid #f60;
+                }
+                
+                
+                
+                
+                
     }
 }
 //(logo+导航条)

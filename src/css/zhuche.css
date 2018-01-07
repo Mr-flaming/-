@@ -2,6 +2,8 @@
 
 #main .container { height: 540px; width: 1120px; padding-top: 46px; padding-right: 80px; }
 
+#main .container .tishi { font-size: 12px; }
+
 #main .container .maint { width: 1100px; height: 36px; }
 
 #main .container .main_t { height: 36px; width: 420px; float: right; border-bottom: 2px solid #961D22; }

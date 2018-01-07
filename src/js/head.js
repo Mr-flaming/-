@@ -1,4 +1,5 @@
-var arr[{
+jQuery(function(){
+var arr = [{
 	'name':'首页',
 },{
 	'name':'衬衫',
@@ -127,3 +128,14 @@ var arr[{
 	'class':'水洗棉',
 	'class':'泡泡纱',
 }]
+//	$nav_ul = $('.nav_ul').html(function(){
+//		return arr.map(function(item){
+//			return `<li data-class="${item.name}">
+//				<a href="#">${item.name}</a>
+//			</li>`
+//			
+//		})
+//	})
+	
+
+})

@@ -178,18 +178,22 @@ jQuery(function(){
 			data.qty = currentV
 			data.color = currentC
 			data.size = currentS
+			data.total = currentV*data.newPrice
+			data.id = currentC+currentS
 			//创建时间保存cookie
 			var time = new Date();
 			time.setDate(time.getDate()+10);
-			
+			console.log(data)
 			//现判断有商品的情况下
 			if(cookies.length){
 				for(var i=0;i<carlist.length;i++){
 					//有相同商品的情况
 					console.log(carlist[i].color == currentC && carlist[i].size == currentS);
 					if(carlist[i].color == currentC && carlist[i].size == currentS){
-						carlist[i].qty = currentV*1 + carlist[i].qty*1
-//						console.log(carlist[i]);
+						carlist[i].qty = currentV*1 + carlist[i].qty*1;
+						
+						console.log(carlist[i]);
+						
 						break
 					}
 				
@@ -204,11 +208,10 @@ jQuery(function(){
 						oldPrice:carlist[0].oldPrice,
 						img:carlist[0].img,
 						name:carlist[0].name,
-						Price:carlist[0].newPrice,
+						newPrice:carlist[0].newPrice,
 						size:currentS,
 						color:currentC,
 						qty:currentV,
-						num:carlist[0].qty*carlist[0].newPrice
 					}
 					carlist.push(goods);
 				}

@@ -52,4 +52,28 @@ jQuery(function($){
 		});
 	},"json");
 	//goodslist3的生成商品
+	//返回顶部
+	var btn = document.querySelector('#btn');
+	 btn.onclick = ()=>{
+                    let times = setInterval(()=>{
+                        // 获取当前滚动果的距离：5000,100
+                        let scrollY = window.scrollY;
+                        // 计算速度
+                        var speed = scrollY/10;
+                        scrollY -=speed;
+                        // 清除定时器
+                        // 当速度为0
+                        // 当scrollY等于0
+                        if(speed <= 0 || scrollY === 0){
+                            clearInterval(times)
+                        }
+                        scroll(0,scrollY)
+                        
+                    },50)
+                }
+	
+	
+	
+	
+	
 });
