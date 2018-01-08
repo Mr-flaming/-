@@ -17,3 +17,17 @@
 #main .container .main_cr { width: 401px; height: 410px; background: #fff; border: 1px solid #ccc; margin-top: 6px; margin-bottom: 20px; margin-right: 37px; }
 
 #main .container .main_cr .denglu { width: 402px; height: 36px; background: #961D22; color: #fff; font-size: 14px; text-align: center; line-height: 36px; }
+
+#main .container .main_cr .import { width: 380px; height: 210px; padding-top: 30px; padding-left: 20px; }
+
+#main .container .main_cr .import #username { width: 350px; height: 43px; border: 1px solid #ccc; padding-left: 10px; }
+
+#main .container .main_cr .import #password { width: 350px; height: 43px; border: 1px solid #ccc; padding-left: 10px; margin-top: 20px; }
+
+#main .container .main_cr .import .dl { width: 360px; height: 75px; padding-right: 20px; margin-top: 14px; }
+
+#main .container .main_cr .import span { display: inline-block; margin-bottom: 6px; }
+
+#main .container .main_cr .import .btn { width: 360px; height: 45px; background: #961D22; float: right; text-align: center; line-height: 45px; color: #fff; }
+
+#main .container .main_cr .tupian { margin-top: 20px; }

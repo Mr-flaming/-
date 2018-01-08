@@ -12,22 +12,24 @@ jQuery(function(){
 	$yzm = $('#yzm')
 	$login = $('#login')
 	$tishi = $('.tishi')
+	$phone = $('#phone')
 	console.log($login)
-	$login.on('click',function(){
+	$('input').on('blur',function(){
 		if($yzm.val() !== $($num[0]).text()){
 			$tishi.text('验证码错误')
+			$yzm.css({background:'red'})
 		}else if($yzm.val() == $($num[0]).text()){
 			$tishi.text('')
-		}else if($('#password1').val() && $('#password2').val() == ''){
-			$('.pass').html('密码不能为空')
-		}else if($('#password1').val() != $('#password2').val()){
-			$('.pass2').html('密码不一致')
-		}else{
-			alert('注册成功')
+			$yzm.css({background:'#fff'})
 		}
+		var res = /^1[3|4|5|8][0-9]\d{4,8}$/
+		if(!res.text($phone)){
+			$('.tishi').text('手机号码格式不正确请修改')
+		}
+		
 	})
-	
-	
+		
+
 	
 	
 	
